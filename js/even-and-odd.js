@@ -27,3 +27,12 @@ function getEvenAndOdd () {
     }
 }
 
+getEvenAndOdd()
+
+if(sum % 2 === 0 && evenAndOdd === 'pari'){
+    console.log("il vincitore è : l'utente")
+}
+else if (sum % 2 !== 0 && evenAndOdd === 'dispari'){
+    console.log("il vincitore è : l'utente")
+}
+else{ console.log( 'il vincitore è : la cpu')};
