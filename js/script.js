@@ -28,17 +28,17 @@ validatePalindrome()*/
 const userWord = prompt('inserisci una parola')
 console.log("la parola scelta dall'utente è : " + userWord);
 
-function reverString () {
+function reverString (userWord) {
     let result = '';
 
-    for(let i = userWord.length; i>= 0; i-- ) {
+    for(let i = userWord.length -1; i>= 0; i-- ) {
         result += userWord[i];
     }
 
     return result; 
 }
 
-const reversedString = reverString();
+const reversedString = reverString(userWord);
 console.log(reversedString);
 
 if (reversedString === userWord) {
